@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- link para plugin JQuery OwlCarousel-->
+    <link rel="stylesheet" href="style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/Owl/owl.theme.default.min.css">
+    
+    <!--Responsividade media query-->
+    <link rel="stylesheet" href="style/responsividade.css">
+
+</head>
+ <title>NETFLIX CLONE</title>
+<body>    
+    <header><!--Tag Semantica, header -->        
+     <div class="container"><!--Menu de navegação, dentro de uma mesma "caixinha chamada container" -->
+         <h2 class="logo">NETFLIX</h2>         
+         <nav><!--Tag Semantica, nav, na hora de criar menus de navegação -->
+             <!--links para serem acessados na hora da navegação -->
+             <a href="#">Inicio</a>
+             <a href="#">Séries</a>
+             <a href="#">Filmes</a>
+             <a href="#">Documentarios</a>
+         </nav>
+     </div>
+    </header>
+           <!--div/tag semantica "Miolo do site" -->
+  <main><!-- uma caixa com uma classe -->
+    <div class="serie-principal"><!--dentro da serie principal uma caixa , classes wrappers divs que são feitas para encaixar tudo dentro -->
+        <div class="container">
+            <h3 class="titulo">ROUND 6</h3>
+            <p class="descricao">
+                Centenas de jogadores falidos aceitam um estranho convite para um jogo de sobrevivência. Um prêmio milionário aguarda, mas as apostas são altas e mortais. Será que você aceitaria este convite ? Assista agora, esta imperdível.
+            </p>
+                <div class="botoes">
+               <button role="button" class="botao"  onclick="location.href='http://www.youtube.com/watch?v=1bXuJn77Cfc'; "value = "ASSISTIR"> 
+                   <i class="fas fa-play"></i>
+                   ASSISTIR TRAILER
+              </button>
+              <button role="button" class="botao" onclick="location.href='https://www.netflix.com/br/title/81040344'; "value = "INFORMACOES">
+                  <i class="fas fa-info-circle"></i>
+                   MAIS INFORMAÇÕES 
+
+                   
+                </button>
+           </div>
+        </div>       
+    </div>
+</main>
+
+<div class="carrosel-series">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini1.jpg" alt="La Casa de Papel">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini2.jpg" alt="Star Wars">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini3.jpg" alt="Quando Chama o Coração">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini4.jpg" alt="Peaky Blinders">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini5.jpg" alt="Hobbit">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini6.jpg" alt="Breaking">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini7.jpg" alt="Dr.House">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini8.jpg" alt="Sobrenatural">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini9.jpg" alt="Smallville">
+        </div><div class="item">
+            <img class="box-serie" src="/netflix-clone-master/img/mini10.jpg" alt="Vingadores">
+        </div>
+    </div>
+</div>
+<!--Referenciando um link externo que esta na nuvem , para usar ícones gratuitos nos botões, site de referencia fontawesome-->
+<script src="https://kit.fontawesome.com/0d1ecbf360.js" crossorigin="anonymous"></script>
+<!--Biblioteca Jquery para configurar o carrossel-->
+<script src="js/owl/jquery.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="js/owl/setup.js"></script>
+<script src="botoes"></script>
+<footer>
+    <p>Netflix Brasil</p>
+</footer>
+</body>
+</html>

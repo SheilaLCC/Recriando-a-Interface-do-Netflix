@@ -1,0 +1,121 @@
+/*css cria regras de formatação para deixar o site padrão em qualquer navegador*/
+
+:root{/*Declarar variavel é uma boa pratica, se precisar de alteração só é feita aqui*/
+    --vermelho:#E50914;
+    --preto:#141414;    
+}    
+
+*{/*ponto zero,o *(asterisco) reseta a formatação inicial padrão da pagina */
+    margin:0;/*margem padrão de todos os elementos*/
+    padding:0;/*retira qualquer espaçamento entre os elementos*/
+    box-sizing: border-box;/*os elementos internos não ultrapassarão a borda da caixa*/
+}
+
+/* definições corpo do site*/
+body{
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+    }
+
+/*Para acesar uma tag html no css, basta colocar o nome da tag;*/ 
+/*Para acessar uma classe do html, eu coloco . (ponto) e o nome da classe*/
+/*como os elementos do container ficarão disponiveis no site */
+header .container{
+    display:flex;/* maneira de alinhar os elementos em tela*/
+    flex-direction: row;
+    align-items: center;/*alinhar ao centro*/
+    justify-content: space-between;/*alinhar espaço entre a tag h2 e a tag nav*/
+}
+     
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black",Times;/*1º Fonte principal,os outros nomes, podem ser usados se for necessário*/
+    font-size: 40px;/*tamanno da fonte*/
+}
+
+/*no html, dentro da tag header, no elemento nav bar, acessar os links e configurar */
+header nav a{
+    text-decoration: none; /*removendo as linhas do link*/
+    color:#AAA;
+    margin-right: 10px;/*margem a direita e distanciamento entre os links*/
+}
+
+/* mudar a cor dos links quando o mouse estiver em cima do elemento de navegação*/
+header nav a:hover{
+    color: #fff;
+}
+
+/*configuração da serie principal*/
+ .serie-principal{
+     font-size: 20px;
+     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100% ), url('/netflix-clone-master/img/Round6capa.jpg') ;/*colocando o cartaz da serie;linear-gradiente melhora o contraste, coloca uma camada fina sobre a imagem com a tonalidade escolhida, neste caso, o preto*/
+     height:400px;/*tamanho da caixa*/
+     background-size: cover;/*a imagem vai ficar dentro da area de cobertura da caixa */
+     display: flex;/*joga os elementos por padrão em linha*/
+     flex-direction: column;/*alterando os elementos para coluna*/
+     justify-content: center;/*segue a direção do flex direction*/
+     align-items: flex-start;/*elementos sempre comecem da direita*/
+   }
+   .serie-principal .descricao{
+       margin-top: 10px;
+       margin-bottom: 40px;
+   }
+    .titulo{
+        margin-top: 15%;
+        font-size: 40px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    /*redefinindo as configurações dos botões*/
+    .botao{
+        background-color: rgba(0,0,0,.50);/*cor*/
+        color: white;/*cor dos elementos dentro do botão*/
+        padding: 15px 30px;/*espaço interno do nosso elemento*/
+        margin-right: 15px;/*espaço entre os botões*/
+        font-size: 12px;     
+        cursor: pointer;  /*deixa o cursor em formato de ponteiro quando estiver sobre o botão*/ 
+        transition: .3s ease all;/*dar efeito; tempo de transição entre uma animação ou outra */       
+        }
+
+        /*toda vez que o mouse passar sobre o botão as cores serão invertidas*/
+        .botao:hover{
+            background-color: white;
+            color:black;
+        }
+        /*espaçamento entre os elementos do botão, o icone e o texto*/
+        .botao i{
+            margin-right: 8px;
+        }
+ 
+  /*wrapper - significado literal "envelopar".
+  Neste projeto nosso container é um wrapper, é uma div que guarda varios outros elementos dentro e receberão a mesma configuração css que for aplicada dentro dele*/
+  .container{
+      margin-left: 20px;
+  }
+
+  .serie-principal .container{
+      width: 60%;/*altera somente o serie principal que esta dentro do container; neste caso tera uma limitação de largura de 60%*/
+  }
+  /*JQuery, configurando as imagens das séries que serão adicionadas ao site */
+
+  .box-serie{
+      height: 100%;
+      width: 100%;
+      display: block;
+  }
+  .carrosel-series{
+      margin-top: 5px;
+  }
+  footer{
+      color: #fff;
+      font-family: 'Arial', Times, serif;
+      display: table;
+      text-align: center;
+      margin-left:left;
+      margin-right: auto; 
+      font-size: 13px;
+      margin-top: 24px;
+  }
+
+  
